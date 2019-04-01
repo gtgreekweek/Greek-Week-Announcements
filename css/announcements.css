@@ -33,11 +33,10 @@ body {
 }
 
 
-/* ----------------- */
-/* Overall Standings */
-/* ----------------- */
-
-.mainStandingsHeader {
+/* --------------------- */
+/* Overall Announcements */
+/* --------------------- */
+.mainAnnouncementsHeader {
     width: 100%;
     text-align: center;
     font-size: 35;
@@ -47,7 +46,7 @@ body {
     padding-top: 15px;
 }
 
-.mainStandingsSubtitle {
+.mainAnnouncementsSubtitle {
     width: 50%;
     margin: 0 auto;
     text-align: center;
@@ -58,8 +57,7 @@ body {
     padding-top: 15px;
 }
 
-
-.standingsHeader {
+.announcementsHeader {
     width: 100%;
     text-align: center;
     font-size: 30;
@@ -67,14 +65,6 @@ body {
     font-weight: 600;
     padding-top: 15px;
     padding-bottom: 20px;
-}
-
-.fratHeader {
-    color: rgb(16,80,148);
-}
-
-.sratHeader {
-    color: rgb(206, 155, 16);
 }
 
 .placeRow {
@@ -90,31 +80,6 @@ body {
     border-collapse: separate;
 }
 
-.chapterLetters {
-    font-size: 30px;
-    width: 100%;
-    margin-bottom: -2px;
-    padding-left: 15px;
-    padding-right: 25px;
-    font-family: serif;
-}
-
-.chapterName {
-    font-family: sans-serif;
-    padding-left: 15px;
-    padding-right: 25px;
-    font-size: 16px;
-    max-width: 175px;
-}
-
-.chapterPoints {
-    font-size: 20px;
-    font-family: sans-serif;
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
 .contentTable {
     margin: 0 auto;
     border-collapse: collapse;
@@ -125,39 +90,47 @@ body {
     padding-bottom: 15px;
 }
 
-#fraternities .contentRow:nth-child(even), .fraternities_table .contentRow:nth-child(even) {
-    background-color: rgb(239, 246, 255);
-}
-
-#sororities .contentRow:nth-child(even), .sororities_table .contentRow:nth-child(even) {
-    background-color: rgb(255, 250, 232);
-}
-
-#fraternities, .fraternities_table {
-    width: 100%;
-}
-
-#sororities, .sororities_table {
-    width: 100%;
-    padding-bottom: 25px;
-}
-
 .row {
     margin: 0 auto;
+}
+
+/* ----------------- */
+/* Announcement card */
+/* ----------------- */
+
+.announcementCard {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.announcementHeader h1 {
+    font-size: 20px;
+    font-style: bold;
+    margin-top: 0px;
+}
+
+.announcementHeader h2 {
+    font-size: 12px;
+    /* font-style: italic; */
+    font-style: normal;
+    margin: 0px;
+}
+
+.announcementBody {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.announcementBody p {
+    font-size: 14px;
 }
 
 .disclosureIndicator {
     width: 7.5px;
     margin-left: 1px;
     margin-right: 15px;
-}
-
-#sororities .contentRow:nth-child(odd) .disclosureIndicator, .sororities_table .contentRow:nth-child(even) .disclosureIndicator {
-    opacity: 0.8;
-}
-
-#fraternities .contentRow:nth-child(odd) .disclosureIndicator, .fraternities_table .contentRow:nth-child(even) .disclosureIndicator {
-    opacity: 0.8;
 }
 
 .aBlock {
@@ -169,98 +142,9 @@ span.loading {
     text-align: center;
 }
 
-#pageContent.loading {
+.loading {
     text-align: center;
 }
-
-/* ------------------ */
-/* Individual Chapter */
-/* ------------------ */
-
-.pageTitle {
-    font-size: 50;
-    text-align: center;
-    font-family: serif;
-}
-
-.pageTitle.minor {
-    font-family: sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#bigChapterName {
-    font-size: 20;
-    font-family: sans-serif;
-    text-align: center;
-}
-
-#bigChapterPoints {
-    padding-top: 30px;
-    font-size: 20;
-    text-align: center;
-    font-family: sans-serif;
-}
-
-#chapterEvents {
-    padding-top: 30px;
-    margin: 0 auto;
-    max-width: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#chapterEvents contentRow > td {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-}
-
-#chapterEventsTitle {
-    font-size: 25;
-    text-align: left;
-    font-family: sans-serif;
-    padding-bottom: 15px;
-    padding-top: 10px;
-}
-
-#chapterEventsTable {
-    font-family: sans-serif;
-    width: 100%;
-}
-
-.chapterEventName {
-    font-size: 21;
-    margin-left: 15px;
-    padding-bottom: 15px;
-    padding-top: 5px;
-}
-
-.chapterEvent {
-    margin-left: 40px;
-}
-
-.chapterPointName {
-    font-size: 18;
-    padding-bottom: 10px;
-}
-
-.chapterPointValue {
-    padding-left:10px;
-    padding-bottom: 10px;
-}
-
-.zeroPointItem {
-    color: rgba(0, 0, 0, 0.4)
-}
-
-#events-frat .contentRow:nth-child(odd) {
-    background-color: rgb(239, 246, 255);
-}
-
-#events-srat .contentRow:nth-child(odd) {
-    background-color: rgb(255, 250, 232);
-}
-
 
 .footer {
     padding-top: 1rem;
